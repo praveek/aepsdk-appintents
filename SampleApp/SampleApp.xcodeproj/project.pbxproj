@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACDA014328FCE65A00926CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA014228FCE65A00926CC6 /* AppDelegate.swift */; };
+		ACDA014528FCE65A00926CC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA014428FCE65A00926CC6 /* SceneDelegate.swift */; };
+		ACDA014728FCE65A00926CC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA014628FCE65A00926CC6 /* ViewController.swift */; };
+		ACDA014A28FCE65A00926CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDA014828FCE65A00926CC6 /* Main.storyboard */; };
+		ACDA014C28FCE65C00926CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDA014B28FCE65C00926CC6 /* Assets.xcassets */; };
+		ACDA014F28FCE65C00926CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDA014D28FCE65C00926CC6 /* LaunchScreen.storyboard */; };
+		ACDA015A28FCE6AF00926CC6 /* AEPCore in Frameworks */ = {isa = PBXBuildFile; productRef = ACDA015928FCE6AF00926CC6 /* AEPCore */; };
+		ACDA015C28FCE6AF00926CC6 /* AEPIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = ACDA015B28FCE6AF00926CC6 /* AEPIdentity */; };
+		ACDA015E28FCE6AF00926CC6 /* AEPLifecycle in Frameworks */ = {isa = PBXBuildFile; productRef = ACDA015D28FCE6AF00926CC6 /* AEPLifecycle */; };
+		ACDA016028FCE6AF00926CC6 /* AEPServices in Frameworks */ = {isa = PBXBuildFile; productRef = ACDA015F28FCE6AF00926CC6 /* AEPServices */; };
+		ACDA016228FCE6AF00926CC6 /* AEPSignal in Frameworks */ = {isa = PBXBuildFile; productRef = ACDA016128FCE6AF00926CC6 /* AEPSignal */; };
+		ACDA016528FCE73600926CC6 /* AEPUserProfile in Frameworks */ = {isa = PBXBuildFile; productRef = ACDA016428FCE73600926CC6 /* AEPUserProfile */; };
+		ACDA016928FCE7C900926CC6 /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDA016828FCE7C900926CC6 /* AppIntents.framework */; };
+		ACDA017E28FCE80B00926CC6 /* AEPSetPrivacyIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA016C28FCE80B00926CC6 /* AEPSetPrivacyIntent.swift */; };
+		ACDA017F28FCE80B00926CC6 /* AEPGetPrivacyIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA016D28FCE80B00926CC6 /* AEPGetPrivacyIntent.swift */; };
+		ACDA018028FCE80B00926CC6 /* AEPGetSDKIdentitiesIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA016E28FCE80B00926CC6 /* AEPGetSDKIdentitiesIntent.swift */; };
+		ACDA018128FCE80B00926CC6 /* AEPTrackIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA016F28FCE80B00926CC6 /* AEPTrackIntent.swift */; };
+		ACDA018228FCE80B00926CC6 /* AEPSetLogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA017028FCE80B00926CC6 /* AEPSetLogLevel.swift */; };
+		ACDA018328FCE80B00926CC6 /* AEPLifecycleStartIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA017128FCE80B00926CC6 /* AEPLifecycleStartIntent.swift */; };
+		ACDA018428FCE80B00926CC6 /* AEPFetchConfigurationIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA017228FCE80B00926CC6 /* AEPFetchConfigurationIntent.swift */; };
+		ACDA018528FCE80B00926CC6 /* AEPUpdateConfigurationIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA017328FCE80B00926CC6 /* AEPUpdateConfigurationIntent.swift */; };
+		ACDA018628FCE80B00926CC6 /* AEPLifecyclePauseIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA017428FCE80B00926CC6 /* AEPLifecyclePauseIntent.swift */; };
+		ACDA018728FCE80B00926CC6 /* AEPClearConfigurationIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA017528FCE80B00926CC6 /* AEPClearConfigurationIntent.swift */; };
+		ACDA018828FCE80B00926CC6 /* AEPResetIdentitiesIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA017628FCE80B00926CC6 /* AEPResetIdentitiesIntent.swift */; };
+		ACDA018928FCE80B00926CC6 /* SharedUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA017728FCE80B00926CC6 /* SharedUtil.swift */; };
+		ACDA018A28FCE80B00926CC6 /* AEPGetExperienceCloudIdIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA017928FCE80B00926CC6 /* AEPGetExperienceCloudIdIntent.swift */; };
+		ACDA018B28FCE80C00926CC6 /* AEPGetAttributesIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA017B28FCE80B00926CC6 /* AEPGetAttributesIntent.swift */; };
+		ACDA018C28FCE80C00926CC6 /* AEPUpdateAttributesIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA017C28FCE80B00926CC6 /* AEPUpdateAttributesIntent.swift */; };
+		ACDA018D28FCE80C00926CC6 /* AEPRemoveAttributesIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA017D28FCE80B00926CC6 /* AEPRemoveAttributesIntent.swift */; };
+		ACDA018F28FCE82400926CC6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDA018E28FCE82400926CC6 /* SystemConfiguration.framework */; };
+		ACDA019128FCEA6000926CC6 /* Adobe_Experience_Platform_logo_256px.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDA019028FCEA6000926CC6 /* Adobe_Experience_Platform_logo_256px.png */; };
+		ACDA019328FCF32200926CC6 /* AEPAppendURLIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA019228FCF32200926CC6 /* AEPAppendURLIntent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ACDA013F28FCE65A00926CC6 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDA014228FCE65A00926CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACDA014428FCE65A00926CC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ACDA014628FCE65A00926CC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACDA014928FCE65A00926CC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACDA014B28FCE65C00926CC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACDA014E28FCE65C00926CC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACDA015028FCE65C00926CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACDA016828FCE7C900926CC6 /* AppIntents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppIntents.framework; path = System/Library/Frameworks/AppIntents.framework; sourceTree = SDKROOT; };
+		ACDA016C28FCE80B00926CC6 /* AEPSetPrivacyIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPSetPrivacyIntent.swift; sourceTree = "<group>"; };
+		ACDA016D28FCE80B00926CC6 /* AEPGetPrivacyIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPGetPrivacyIntent.swift; sourceTree = "<group>"; };
+		ACDA016E28FCE80B00926CC6 /* AEPGetSDKIdentitiesIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPGetSDKIdentitiesIntent.swift; sourceTree = "<group>"; };
+		ACDA016F28FCE80B00926CC6 /* AEPTrackIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPTrackIntent.swift; sourceTree = "<group>"; };
+		ACDA017028FCE80B00926CC6 /* AEPSetLogLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPSetLogLevel.swift; sourceTree = "<group>"; };
+		ACDA017128FCE80B00926CC6 /* AEPLifecycleStartIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPLifecycleStartIntent.swift; sourceTree = "<group>"; };
+		ACDA017228FCE80B00926CC6 /* AEPFetchConfigurationIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPFetchConfigurationIntent.swift; sourceTree = "<group>"; };
+		ACDA017328FCE80B00926CC6 /* AEPUpdateConfigurationIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPUpdateConfigurationIntent.swift; sourceTree = "<group>"; };
+		ACDA017428FCE80B00926CC6 /* AEPLifecyclePauseIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPLifecyclePauseIntent.swift; sourceTree = "<group>"; };
+		ACDA017528FCE80B00926CC6 /* AEPClearConfigurationIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPClearConfigurationIntent.swift; sourceTree = "<group>"; };
+		ACDA017628FCE80B00926CC6 /* AEPResetIdentitiesIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPResetIdentitiesIntent.swift; sourceTree = "<group>"; };
+		ACDA017728FCE80B00926CC6 /* SharedUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedUtil.swift; sourceTree = "<group>"; };
+		ACDA017928FCE80B00926CC6 /* AEPGetExperienceCloudIdIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPGetExperienceCloudIdIntent.swift; sourceTree = "<group>"; };
+		ACDA017B28FCE80B00926CC6 /* AEPGetAttributesIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPGetAttributesIntent.swift; sourceTree = "<group>"; };
+		ACDA017C28FCE80B00926CC6 /* AEPUpdateAttributesIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPUpdateAttributesIntent.swift; sourceTree = "<group>"; };
+		ACDA017D28FCE80B00926CC6 /* AEPRemoveAttributesIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEPRemoveAttributesIntent.swift; sourceTree = "<group>"; };
+		ACDA018E28FCE82400926CC6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ACDA019028FCEA6000926CC6 /* Adobe_Experience_Platform_logo_256px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Adobe_Experience_Platform_logo_256px.png; path = "../../../aepsdk-sample-app-ios/Resources/Icons/Adobe_Experience_Platform_logo_256px.png"; sourceTree = "<group>"; };
+		ACDA019228FCF32200926CC6 /* AEPAppendURLIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEPAppendURLIntent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACDA013C28FCE65A00926CC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDA018F28FCE82400926CC6 /* SystemConfiguration.framework in Frameworks */,
+				ACDA016928FCE7C900926CC6 /* AppIntents.framework in Frameworks */,
+				ACDA016528FCE73600926CC6 /* AEPUserProfile in Frameworks */,
+				ACDA015A28FCE6AF00926CC6 /* AEPCore in Frameworks */,
+				ACDA016228FCE6AF00926CC6 /* AEPSignal in Frameworks */,
+				ACDA016028FCE6AF00926CC6 /* AEPServices in Frameworks */,
+				ACDA015C28FCE6AF00926CC6 /* AEPIdentity in Frameworks */,
+				ACDA015E28FCE6AF00926CC6 /* AEPLifecycle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACDA013628FCE65A00926CC6 = {
+			isa = PBXGroup;
+			children = (
+				ACDA014128FCE65A00926CC6 /* SampleApp */,
+				ACDA014028FCE65A00926CC6 /* Products */,
+				ACDA016728FCE7C900926CC6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ACDA014028FCE65A00926CC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA013F28FCE65A00926CC6 /* SampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACDA014128FCE65A00926CC6 /* SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA016A28FCE80B00926CC6 /* AEPAppIntents */,
+				ACDA014228FCE65A00926CC6 /* AppDelegate.swift */,
+				ACDA014428FCE65A00926CC6 /* SceneDelegate.swift */,
+				ACDA014628FCE65A00926CC6 /* ViewController.swift */,
+				ACDA014828FCE65A00926CC6 /* Main.storyboard */,
+				ACDA014B28FCE65C00926CC6 /* Assets.xcassets */,
+				ACDA014D28FCE65C00926CC6 /* LaunchScreen.storyboard */,
+				ACDA015028FCE65C00926CC6 /* Info.plist */,
+				ACDA019028FCEA6000926CC6 /* Adobe_Experience_Platform_logo_256px.png */,
+			);
+			path = SampleApp;
+			sourceTree = "<group>";
+		};
+		ACDA016728FCE7C900926CC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA018E28FCE82400926CC6 /* SystemConfiguration.framework */,
+				ACDA016828FCE7C900926CC6 /* AppIntents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACDA016A28FCE80B00926CC6 /* AEPAppIntents */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA016B28FCE80B00926CC6 /* AEPCore */,
+				ACDA017728FCE80B00926CC6 /* SharedUtil.swift */,
+				ACDA017828FCE80B00926CC6 /* AEPIdentity */,
+				ACDA017A28FCE80B00926CC6 /* AEPUserProfile */,
+			);
+			name = AEPAppIntents;
+			path = ../../AEPAppIntents;
+			sourceTree = "<group>";
+		};
+		ACDA016B28FCE80B00926CC6 /* AEPCore */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA016C28FCE80B00926CC6 /* AEPSetPrivacyIntent.swift */,
+				ACDA016D28FCE80B00926CC6 /* AEPGetPrivacyIntent.swift */,
+				ACDA016E28FCE80B00926CC6 /* AEPGetSDKIdentitiesIntent.swift */,
+				ACDA016F28FCE80B00926CC6 /* AEPTrackIntent.swift */,
+				ACDA017028FCE80B00926CC6 /* AEPSetLogLevel.swift */,
+				ACDA017128FCE80B00926CC6 /* AEPLifecycleStartIntent.swift */,
+				ACDA017228FCE80B00926CC6 /* AEPFetchConfigurationIntent.swift */,
+				ACDA017328FCE80B00926CC6 /* AEPUpdateConfigurationIntent.swift */,
+				ACDA017428FCE80B00926CC6 /* AEPLifecyclePauseIntent.swift */,
+				ACDA017528FCE80B00926CC6 /* AEPClearConfigurationIntent.swift */,
+				ACDA017628FCE80B00926CC6 /* AEPResetIdentitiesIntent.swift */,
+			);
+			path = AEPCore;
+			sourceTree = "<group>";
+		};
+		ACDA017828FCE80B00926CC6 /* AEPIdentity */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA017928FCE80B00926CC6 /* AEPGetExperienceCloudIdIntent.swift */,
+				ACDA019228FCF32200926CC6 /* AEPAppendURLIntent.swift */,
+			);
+			path = AEPIdentity;
+			sourceTree = "<group>";
+		};
+		ACDA017A28FCE80B00926CC6 /* AEPUserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA017B28FCE80B00926CC6 /* AEPGetAttributesIntent.swift */,
+				ACDA017C28FCE80B00926CC6 /* AEPUpdateAttributesIntent.swift */,
+				ACDA017D28FCE80B00926CC6 /* AEPRemoveAttributesIntent.swift */,
+			);
+			path = AEPUserProfile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACDA013E28FCE65A00926CC6 /* SampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACDA015328FCE65C00926CC6 /* Build configuration list for PBXNativeTarget "SampleApp" */;
+			buildPhases = (
+				ACDA013B28FCE65A00926CC6 /* Sources */,
+				ACDA013C28FCE65A00926CC6 /* Frameworks */,
+				ACDA013D28FCE65A00926CC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleApp;
+			packageProductDependencies = (
+				ACDA015928FCE6AF00926CC6 /* AEPCore */,
+				ACDA015B28FCE6AF00926CC6 /* AEPIdentity */,
+				ACDA015D28FCE6AF00926CC6 /* AEPLifecycle */,
+				ACDA015F28FCE6AF00926CC6 /* AEPServices */,
+				ACDA016128FCE6AF00926CC6 /* AEPSignal */,
+				ACDA016428FCE73600926CC6 /* AEPUserProfile */,
+			);
+			productName = SampleApp;
+			productReference = ACDA013F28FCE65A00926CC6 /* SampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACDA013728FCE65A00926CC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					ACDA013E28FCE65A00926CC6 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = ACDA013A28FCE65A00926CC6 /* Build configuration list for PBXProject "SampleApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACDA013628FCE65A00926CC6;
+			packageReferences = (
+				ACDA015828FCE6AF00926CC6 /* XCRemoteSwiftPackageReference "aepsdk-core-ios" */,
+				ACDA016328FCE73600926CC6 /* XCRemoteSwiftPackageReference "aepsdk-userprofile-ios" */,
+			);
+			productRefGroup = ACDA014028FCE65A00926CC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACDA013E28FCE65A00926CC6 /* SampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACDA013D28FCE65A00926CC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDA014F28FCE65C00926CC6 /* LaunchScreen.storyboard in Resources */,
+				ACDA019128FCEA6000926CC6 /* Adobe_Experience_Platform_logo_256px.png in Resources */,
+				ACDA014C28FCE65C00926CC6 /* Assets.xcassets in Resources */,
+				ACDA014A28FCE65A00926CC6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACDA013B28FCE65A00926CC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDA018028FCE80B00926CC6 /* AEPGetSDKIdentitiesIntent.swift in Sources */,
+				ACDA018B28FCE80C00926CC6 /* AEPGetAttributesIntent.swift in Sources */,
+				ACDA018528FCE80B00926CC6 /* AEPUpdateConfigurationIntent.swift in Sources */,
+				ACDA018A28FCE80B00926CC6 /* AEPGetExperienceCloudIdIntent.swift in Sources */,
+				ACDA018328FCE80B00926CC6 /* AEPLifecycleStartIntent.swift in Sources */,
+				ACDA017F28FCE80B00926CC6 /* AEPGetPrivacyIntent.swift in Sources */,
+				ACDA019328FCF32200926CC6 /* AEPAppendURLIntent.swift in Sources */,
+				ACDA018728FCE80B00926CC6 /* AEPClearConfigurationIntent.swift in Sources */,
+				ACDA014728FCE65A00926CC6 /* ViewController.swift in Sources */,
+				ACDA018C28FCE80C00926CC6 /* AEPUpdateAttributesIntent.swift in Sources */,
+				ACDA018928FCE80B00926CC6 /* SharedUtil.swift in Sources */,
+				ACDA018228FCE80B00926CC6 /* AEPSetLogLevel.swift in Sources */,
+				ACDA018128FCE80B00926CC6 /* AEPTrackIntent.swift in Sources */,
+				ACDA018D28FCE80C00926CC6 /* AEPRemoveAttributesIntent.swift in Sources */,
+				ACDA014328FCE65A00926CC6 /* AppDelegate.swift in Sources */,
+				ACDA017E28FCE80B00926CC6 /* AEPSetPrivacyIntent.swift in Sources */,
+				ACDA018828FCE80B00926CC6 /* AEPResetIdentitiesIntent.swift in Sources */,
+				ACDA018428FCE80B00926CC6 /* AEPFetchConfigurationIntent.swift in Sources */,
+				ACDA018628FCE80B00926CC6 /* AEPLifecyclePauseIntent.swift in Sources */,
+				ACDA014528FCE65A00926CC6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ACDA014828FCE65A00926CC6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACDA014928FCE65A00926CC6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACDA014D28FCE65C00926CC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACDA014E28FCE65C00926CC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACDA015128FCE65C00926CC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACDA015228FCE65C00926CC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACDA015428FCE65C00926CC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Adobe.SampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACDA015528FCE65C00926CC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Adobe.SampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACDA013A28FCE65A00926CC6 /* Build configuration list for PBXProject "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDA015128FCE65C00926CC6 /* Debug */,
+				ACDA015228FCE65C00926CC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACDA015328FCE65C00926CC6 /* Build configuration list for PBXNativeTarget "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDA015428FCE65C00926CC6 /* Debug */,
+				ACDA015528FCE65C00926CC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACDA015828FCE6AF00926CC6 /* XCRemoteSwiftPackageReference "aepsdk-core-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adobe/aepsdk-core-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		ACDA016328FCE73600926CC6 /* XCRemoteSwiftPackageReference "aepsdk-userprofile-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adobe/aepsdk-userprofile-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACDA015928FCE6AF00926CC6 /* AEPCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACDA015828FCE6AF00926CC6 /* XCRemoteSwiftPackageReference "aepsdk-core-ios" */;
+			productName = AEPCore;
+		};
+		ACDA015B28FCE6AF00926CC6 /* AEPIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACDA015828FCE6AF00926CC6 /* XCRemoteSwiftPackageReference "aepsdk-core-ios" */;
+			productName = AEPIdentity;
+		};
+		ACDA015D28FCE6AF00926CC6 /* AEPLifecycle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACDA015828FCE6AF00926CC6 /* XCRemoteSwiftPackageReference "aepsdk-core-ios" */;
+			productName = AEPLifecycle;
+		};
+		ACDA015F28FCE6AF00926CC6 /* AEPServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACDA015828FCE6AF00926CC6 /* XCRemoteSwiftPackageReference "aepsdk-core-ios" */;
+			productName = AEPServices;
+		};
+		ACDA016128FCE6AF00926CC6 /* AEPSignal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACDA015828FCE6AF00926CC6 /* XCRemoteSwiftPackageReference "aepsdk-core-ios" */;
+			productName = AEPSignal;
+		};
+		ACDA016428FCE73600926CC6 /* AEPUserProfile */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACDA016328FCE73600926CC6 /* XCRemoteSwiftPackageReference "aepsdk-userprofile-ios" */;
+			productName = AEPUserProfile;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ACDA013728FCE65A00926CC6 /* Project object */;
+}
